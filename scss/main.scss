@@ -33,7 +33,7 @@ footer.footer{
         height:100%;
         background-image: url(../Images/principale.jpg);
         background-size: cover;
-        filter: brightness(0.3);
+        filter: brightness(0.7);
     }
 
     *{
@@ -42,10 +42,11 @@ footer.footer{
     }
 
     .hero-scene-content{
-        height: 300px;
+        height: 350px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
 }

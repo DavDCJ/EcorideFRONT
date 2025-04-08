@@ -489,7 +489,6 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
-  appearance: button;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -547,7 +546,6 @@ legend + * {
 
 [type=search] {
   -webkit-appearance: textfield;
-  appearance: textfield;
   outline-offset: -2px;
 }
 
@@ -570,7 +568,6 @@ legend + * {
 ::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
-  appearance: button;
 }
 
 output {
@@ -11974,9 +11971,17 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+p {
+  font-family: "cambria", serif;
+}
+
 html {
   position: relative;
   min-height: 100%;
+}
+
+main {
+  margin-bottom: 90px;
 }
 
 footer.footer {
@@ -11984,4 +11989,29 @@ footer.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.hero-scene {
+  position: relative;
+}
+.hero-scene::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../Images/principale.jpg);
+  background-size: cover;
+  filter: brightness(0.7);
+}
+.hero-scene * {
+  position: relative;
+}
+.hero-scene .hero-scene-content {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
