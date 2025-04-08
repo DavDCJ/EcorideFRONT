@@ -50,3 +50,37 @@ footer.footer{
     }
 
 }
+.map-scene{
+    position: relative;
+    &::before{
+        content:"";
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-image: url(../Images/map.jpg);
+        background-size: cover;
+        filter: brightness(0.9);
+    }
+
+    *{
+        //Positionner les éléments devant le ::before
+        position:relative;
+    }
+
+    .map-scene-content{
+        height: 810px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.bg-primary{
+
+    --bs-bg-opacity: 0.5;
+    margin-left: 10px;
+    margin-right: 10px;
+}
