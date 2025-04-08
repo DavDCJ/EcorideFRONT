@@ -547,7 +547,7 @@ legend + * {
 
 [type=search] {
   -webkit-appearance: textfield;
-appearance: textfield;
+  appearance: textfield;
   outline-offset: -2px;
 }
 
@@ -569,8 +569,8 @@ appearance: textfield;
 
 ::file-selector-button {
   font: inherit;
--webkit-appearance: button;
-appearance: button;
+  -webkit-appearance: button;
+  appearance: button;
 }
 
 output {
@@ -11982,4 +11982,6 @@ html {
 footer.footer {
   padding: 10px;
   position: absolute;
+  bottom: 0;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

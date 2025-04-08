@@ -1,6 +1,11 @@
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import 'custom';
 
+
+p{
+    font-family: $font-family-serif;
+}
+
 html{
     position: relative;
     min-height: 100%;
@@ -17,6 +22,30 @@ footer.footer{
    width: 100%;
 }
 
-p{
-    font-family: $font-family-serif;
+.hero-scene{
+    position: relative;
+    &::before{
+        content:"";
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-image: url(../Images/principale.jpg);
+        background-size: cover;
+        filter: brightness(0.3);
+    }
+
+    *{
+        //Positionner les éléments devant le ::before
+        position:relative;
+    }
+
+    .hero-scene-content{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
