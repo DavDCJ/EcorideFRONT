@@ -12050,4 +12050,30 @@ footer.footer {
 
 .form-label {
   text-align: left;
+}
+
+.account-scene {
+  position: relative;
+}
+.account-scene::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../Images/route.jpg);
+  background-size: cover;
+  filter: brightness(0.9);
+}
+.account-scene * {
+  position: relative;
+}
+.account-scene .account-scene-content {
+  height: 810px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
 }/*# sourceMappingURL=main.css.map */
