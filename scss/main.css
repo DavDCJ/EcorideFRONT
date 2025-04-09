@@ -11981,7 +11981,7 @@ html {
 }
 
 main {
-  margin-bottom: 90px;
+  margin-bottom: 0px;
 }
 
 footer.footer {
@@ -12039,10 +12039,15 @@ footer.footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: left;
 }
 
 .bg-primary {
   --bs-bg-opacity: 0.5;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.form-label {
+  text-align: left;
 }/*# sourceMappingURL=main.css.map */
