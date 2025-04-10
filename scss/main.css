@@ -12076,4 +12076,10 @@ footer.footer {
   align-items: center;
   justify-content: center;
   text-align: left;
+}
+
+.search-bar {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
 }/*# sourceMappingURL=main.css.map */

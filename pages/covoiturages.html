@@ -3,3 +3,45 @@
         <h1><br><br>Les covoiturages disponibles pour ce trajet</h1>
     </div>
 </div>
+
+<div class="container mt-3">
+    <form class="row g-3 align-items-center">
+
+        <div class="col-md-3">
+            <label for="dureeMax" class="form-label">Durée maximale (en minutes)</label>
+            <input type="number" class="form-control" id="dureeMax" name="dureeMax" min="0" placeholder="Ex : 60">
+        </div>
+
+        <div class="col-md-3">
+            <label for="prixMax" class="form-label">Prix maximum (€)</label>
+            <input type="number" class="form-control" id="prixMax" name="prixMax" min="0" step="0.01" placeholder="Ex : 15.00">
+        </div>
+
+        <div class="col-md-3">
+            <label for="noteConducteur" class="form-label">Note minimale du conducteur</label>
+            <select class="form-select" id="noteConducteur" name="noteConducteur">
+                <option value="">Choisir...</option>
+                <option value="5">5 étoiles</option>
+                <option value="4.5">4.5 étoiles et plus</option>
+                <option value="4">4 étoiles et plus</option>
+                <option value="3.5">3.5 étoiles et plus</option>
+            </select>
+        </div>
+
+        <div class="col-md-3 form-check d-flex align-items-justify">
+            <input class="form-check-input ms-2" type="checkbox" id="electriccar">
+            <label class="form-check-label" for="electriccar">
+            <i class="bi bi-ev-front ms-2"> Voiture électrique uniquement</i>
+            </label>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Filtrer</button>
+        </div>
+    </form>
+</div>
+
+<div class="container row row-cols-2 row-cols-lg-3 bg-primary">
+    <div class="col p-3">
+    </div>
+</div>
