@@ -8,6 +8,8 @@ export const allRoutes = [
     new Route("/inscription", "Inscription", "/pages/inscription.html"),
     new Route("/moncompte", "Mon Compte", "/pages/moncompte.html"),
     new Route("/editPassword", "Modifier le Mot de Passe", "/pages/editPassword.html"),
+    new Route("/mestrajets", "Mes trajets", "/pages/mestrajets.html"),
+    new Route("/reserver", "Réservation", "/pages/reserver.html"),
     new Route("/test", "Test", "/pages/test.html"),
 ];
 

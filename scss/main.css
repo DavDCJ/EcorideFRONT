@@ -12082,4 +12082,38 @@ footer.footer {
   display: flex;
   flex-wrap: nowrap;
   gap: 10px;
+}
+
+.monhistorique a {
+  display: block;
+  color: #D4A373;
+  padding: 10px;
+}
+
+.trip-card {
+  background-color: #BAD4AA;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trip-info {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.trip-time {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.user-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
