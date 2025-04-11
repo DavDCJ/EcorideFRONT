@@ -1,0 +1,54 @@
+<div class="account-scene text-center">
+    <div class="account-scene-content">
+
+        <div class="container py-3 mb-3 bg-primary rounded">
+            <h1>Nouveau trajet</h1>
+
+            <div class="container mt-3">
+                <form class="row g-3 align-items-center">
+
+                    <div class="col-md-6">
+                        <label for="depart" class="form-label">Ville de départ</label>
+                        <input type="text" class="form-control" id="depart" name="depart" placeholder="Ex : Paris">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="arrivee" class="form-label">Ville d'arrivée</label>
+                        <input type="text" class="form-control" id="arrivee" name="arrivee"placeholder="Ex : Marseille">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="date" class="form-label">Date de départ</label>
+                        <input type="date" class="form-control" id="date" name="date">
+                    </div>
+            
+                    <div class="col-md-6">
+                        <label for="time" class="form-label">Heure de départ</label>
+                        <input type="time" class="form-control" id="time" name="time">
+                    </div>
+            
+                    <div class="col-md-6">
+                        <label for="duree" class="form-label">Durée estimée (en minutes)</label>
+                        <input type="number" class="form-control" id="duree" name="dureeMax" min="0" placeholder="Ex : 60">
+                    </div>
+            
+                    <div class="col-md-6">
+                        <label for="prix" class="form-label">Prix (€)</label>
+                        <input type="number" class="form-control" id="prix" name="prix" min="0" step="0.01" placeholder="Ex : 15.00">
+                    </div>
+            
+                    <div class="col-md-3">
+                        <label for="vehicule" class="form-label">Véhicule pour ce trajet</label>
+                        <select class="form-select" id="vehicule" name="vehicule">
+                            <option value="">Choisir...</option>
+                            <option value="1">Ma voiture principale</option>
+                            <option value="2">Ma voiture secondaire</option>
+                            <option value="3">Autre voiture</option>
+                        </select>
+                    </div>
+            
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Publier ce trajet</button>
+                    </div>
+                </form>
+            </div>
+            
