@@ -5,22 +5,26 @@
          <form >
             <div class="">
                 <label class="form-label" for="Pseudo">Pseudo</label>
-                <input type="text" class="form-control" id="Pseudo"name="Pseudo"> 
+                <input type="text" class="form-control" id="Pseudo"name="Pseudo">
+                <div class="invalid-feedback">Ce champs est obligatoire</div> 
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email"name="email"> 
+              <input type="email" class="form-control" id="email" placeholder="Ex: xxxx@gmail.com" name="email">
+              <div class="invalid-feedback">Ce champs est obligatoire</div> 
             </div>
             <div class="mb-3">
               <label for="password" class="form-label">Mot de passe</label>
-              <input type="password" class="form-control" id="password" name="password" placeholder="8 caractères min." minlength="8">
-            </div>
+              <input type="password" class="form-control" id="password" name="password" minlength="8">
+            <div class="invalid-feedback">Votre mot de passe doit contenir les éléments suivants : 8 caractères minimum, 1 chiffre, 1 majuscule, 1 minuscule, 1 caractère spécial</div>
+            <div class="valid-feedback">Mot de passe correct</div>
             <div class="mb-3">
-                <label for="ValidatePassword" class="form-label">Validez votre mot de passe</label>
-                <input type="password" class="form-control" id="ValidatePassword" name="PasswordConfirm" minlength="8">
+                <label for="ConfirmPassword" class="form-label">Confirmez votre mot de passe</label>
+                <input type="password" class="form-control" id="ConfirmPassword" name="ConfirmPassword" minlength="8">
+                <div class="invalid-feedback">Vous devez renseignez un mot de passe identique</div>
               </div>
             <div class="text-center pt-4">
-                <button type="submit" class="btn btn-primary">Inscription</button>
+                <button type="submit" class="btn btn-primary" id="btn-validate-inscription">Inscription</button>
             </div>
         </form>
         <div class="text-center pt-3">
