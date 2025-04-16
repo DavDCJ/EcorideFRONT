@@ -13,6 +13,7 @@ function checkCredentials(){
         setToken(token);
         //Il faudra récup le vrai token
         //Placer ce token en cookie
+        setCookie(RoleCookieName, "admin", 7);
 
         window.location.replace("/home");
         }

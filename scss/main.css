@@ -12116,4 +12116,12 @@ footer.footer {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.vehicleSection {
+  overflow-x: hidden;
+}
+
+.vehicle-block {
+  border: 1px solid;
 }/*# sourceMappingURL=main.css.map */
